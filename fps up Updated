@@ -13,8 +13,8 @@ function MakeScriptHub()
 end
 
 OrionLib:MakeNotification({
-	Name = "Verify PRESS ENTER",
-	Content = "Enter Verify Into the Box above "..Player.Name..".",
+	Name = "Verify",
+	Content = "Enter Verify Into the Box above Or Press Enter"..Player.Name..".",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 }) --Notification
