@@ -1,0 +1,86 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ionlyusegithubformcmods/1-Line-Scripts/main/Mobile%20Friendly%20Orion')))() --This Will Load The Script Code
+local Player = game.Players.LocalPlayer --This Will Reveal The Player Name
+  local Window = OrionLib:MakeWindow({
+		Name = "F ‍ P ‍ S ‍  ‍ UP",
+		HidePremium = false,
+		SaveConfig = true,
+		ConfigFolder = "OrionTest",
+        IntroText = "FPS"       
+}) --This Will Load The Script Hub
+
+function MakeScriptHub()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/48973854274252/-/main/FPS%20UP"))() --Put The Script That Will Load If The Key Is Correct Here
+end
+
+OrionLib:MakeNotification({
+	Name = "Verify",
+	Content = "Enter Verify Into the Box above "..Player.Name..".",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+}) --Notification
+
+getgenv().Key = "Verify" --Put The Correct Key Here
+getgenv().KeyInput = "string" --Require For The Key To Work
+
+local Tab = Window:MakeTab({
+	Name = "Verify",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) --Making A Tab
+
+Tab:AddTextbox({
+	Name = "Box",
+	Default = "Verify Here.",
+	TextDisappear = true,
+	Callback = function(Value)
+		getgenv().KeyInput = Value
+	end	  
+}) --You Will Enter The Key Here
+
+Tab:AddButton({
+    Name = "⏎ E N T E R",
+    Callback = function()
+        if getgenv().KeyInput == getgenv().Key then
+            OrionLib:MakeNotification({
+                Name = "Verified",
+                Content = "Loading…",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+            wait(2)
+            OrionLib:MakeNotification({
+                Name = "Fps Fix",
+                Content = "No Ui Displays",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+            wait(1)
+            OrionLib:Destroy()
+            wait(.3)
+            MakeScriptHub()
+        else
+           OrionLib:MakeNotification({
+                Name = "Verifying",
+                Content = "Checking, please wait",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+            wait(2)
+            OrionLib:MakeNotification({
+                Name = "Incorrect",
+                Content = "Enter Verify No Double Quotation Marks.",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+        end
+    end
+}) --This Will Check The Key You Entered
+
+Tab:AddButton({
+	Name = "Esp",
+	Callback = function()
+      		setclipboard("loadstring(game:HttpGet('https://pastefy.app/Ny9k0rZR/raw'))()") --This Will Copy The Link Of The Key
+  	end    
+}) 
+    
+OrionLib:Init() --Require If The Script Is Done
