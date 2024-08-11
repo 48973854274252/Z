@@ -13,7 +13,7 @@ function MakeScriptHub()
 end
 
 OrionLib:MakeNotification({
-	Name = "Verify",
+	Name = "Verify PRESS ENTER",
 	Content = "Enter Verify Into the Box above "..Player.Name..".",
 	Image = "rbxassetid://4483345998",
 	Time = 5
@@ -30,7 +30,7 @@ local Tab = Window:MakeTab({
 
 Tab:AddTextbox({
 	Name = "Box",
-	Default = "Verify Here.",
+	Default = "Verify",
 	TextDisappear = true,
 	Callback = function(Value)
 		getgenv().KeyInput = Value
