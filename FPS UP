@@ -1,7 +1,7 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/48973854274252/Z/main/Orion')))() --This Will Load The Script Code
 local Player = game.Players.LocalPlayer --This Will Reveal The Player Name
   local Window = OrionLib:MakeWindow({
-		Name = "F ‍ P ‍ S ‍  ‍ UP",
+		Name = "F ‍ P ‍ S ‍  U N L O C K E R ☄",
 		HidePremium = false,
 		SaveConfig = true,
 		ConfigFolder = "OrionTest",
