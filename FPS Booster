@@ -73,14 +73,7 @@ Tab:AddButton({
                 Time = 5
             })
         end
-    end
-}) --This Will Check The Key You Entered
-
-Tab:AddButton({
-	Name = "Esp",
-	Callback = function()
-      		setclipboard("loadstring(game:HttpGet('https://pastefy.app/Ny9k0rZR/raw'))()") --This Will Copy The Link Of The Key
-  	end    
+    end   
 }) 
     
 OrionLib:Init() --Require If The Script Is Done
