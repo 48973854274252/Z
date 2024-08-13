@@ -5,7 +5,7 @@ local Player = game.Players.LocalPlayer --This Will Reveal The Player Name
 		HidePremium = false,
 		SaveConfig = true,
 		ConfigFolder = "OrionTest",
-        IntroText = "⧉ Loading ⧉"       
+        IntroText = "- Loading -"       
 }) --This Will Load The Script Hub
 
 function MakeScriptHub()
@@ -23,7 +23,7 @@ getgenv().Key = "Verify" --Put The Correct Key Here
 getgenv().KeyInput = "string" --Require For The Key To Work
 
 local Tab = Window:MakeTab({
-	Name = "⊕",
+	Name = "ꤥ",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 }) --Making A Tab
@@ -42,15 +42,15 @@ Tab:AddButton({
     Callback = function()
         if getgenv().KeyInput == getgenv().Key then
             OrionLib:MakeNotification({
-                Name = "Verified",
-                Content = "Loading…",
+                Name = "Verifying..",
+                Content = "Checking, please wait",
                 Image = "rbxassetid://4483345998",
                 Time = 5
             })
             wait(2)
             OrionLib:MakeNotification({
-                Name = "Fps Fix",
-                Content = "No Ui Displays",
+                Name = "Loaded",
+                Content = "Correct",
                 Image = "rbxassetid://4483345998",
                 Time = 5
             })
@@ -60,7 +60,7 @@ Tab:AddButton({
             MakeScriptHub()
         else
            OrionLib:MakeNotification({
-                Name = "Verifying",
+                Name = "Verifying..",
                 Content = "Checking, please wait",
                 Image = "rbxassetid://4483345998",
                 Time = 5
@@ -68,7 +68,7 @@ Tab:AddButton({
             wait(2)
             OrionLib:MakeNotification({
                 Name = "Incorrect",
-                Content = "Retry ꤥ",
+                Content = "Retry ҉‍",
                 Image = "rbxassetid://4483345998",
                 Time = 5
             })
