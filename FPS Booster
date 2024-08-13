@@ -68,7 +68,7 @@ Tab:AddButton({
             wait(2)
             OrionLib:MakeNotification({
                 Name = "Incorrect",
-                Content = "Enter Verify No Double Quotation Marks.",
+                Content = "Retry ꤥ",
                 Image = "rbxassetid://4483345998",
                 Time = 5
             })
