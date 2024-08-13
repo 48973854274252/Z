@@ -5,7 +5,7 @@ local Player = game.Players.LocalPlayer --This Will Reveal The Player Name
 		HidePremium = false,
 		SaveConfig = true,
 		ConfigFolder = "OrionTest",
-        IntroText = "FPS"       
+        IntroText = "⧉ Loading ⧉"       
 }) --This Will Load The Script Hub
 
 function MakeScriptHub()
@@ -23,7 +23,7 @@ getgenv().Key = "Verify" --Put The Correct Key Here
 getgenv().KeyInput = "string" --Require For The Key To Work
 
 local Tab = Window:MakeTab({
-	Name = "Verify",
+	Name = "⊕",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 }) --Making A Tab
