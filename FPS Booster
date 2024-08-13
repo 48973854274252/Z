@@ -29,8 +29,8 @@ local Tab = Window:MakeTab({
 }) --Making A Tab
 
 Tab:AddTextbox({
-	Name = "Box",
-	Default = "......",
+	Name = "Verify here",
+	Default = "",
 	TextDisappear = true,
 	Callback = function(Value)
 		getgenv().KeyInput = Value
