@@ -6,7 +6,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/48973854274252/Z/main
   return
 end
 _G.alreadyexec = true
-_G.CTitle = "RLGL" 
+_G.CTitle = "FREE GAMEPASS SCRIPT LEGIT" 
 
 
 
@@ -597,7 +597,7 @@ end
 -- Actual Script
 --example:
 local other
-other = addButton("", function()
+other = addButton("Exit", function()
 return
 end)
 other:WaitForChild("Name").TextColor = BrickColor.new(0,255,0)
