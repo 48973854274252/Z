@@ -1,3 +1,4 @@
+-- Info on line 599
 local success, err = pcall(function()
 if _G.alreadyexec == true then
   _G.NotificationText = "It's already executed"
@@ -123,7 +124,7 @@ Title.TextSize = 14
 Title.TextWrapped = true
 Title.TextXAlignment = Enum.TextXAlignment.Left
 Title.TextYAlignment = Enum.TextYAlignment.Center
-loadstring(game:HttpGet("https://raw.githubusercontent.com/shuttle-r/crap/main/randomizeNonSense.txt",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/48973854274252/Z/main/X8p/Words.txt",true))()
 Title.Text = _G.words[math.random(1,#_G.words)]
 
 
@@ -507,8 +508,8 @@ messageDoneFiltering.OnClientEvent:Connect(function(message)
     if player then
         if message == ":Disable" then
              Main:Destroy()
-             _G.NotificationText = "Uh something went wrong - please wait because the owner watching anime"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/shuttle-r/crap/main/Notification.txt",true))()
+             _G.NotificationText = "Uh something went wrong - High Hiatus"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/48973854274252/Z/main/X8p/Hiatuslpa",true))()
          end
     end
 end)
@@ -534,7 +535,7 @@ messageDoneFiltering.OnClientEvent:Connect(function(message)
     local message = message.Message or ""
     if player then
         if message == ":Kick" then
-          game.Players.LocalPlayer:Kick("Uh something went wrong on the script | owner will figure it out soon because the owner watching you lie in april")
+          game.Players.LocalPlayer:Kick("ERROR")
          end
     end
 end)
@@ -596,7 +597,7 @@ end
 -- Actual Script
 --example:
 local other
-other = addButton("Made by: shuFEL", function()
+other = addButton("", function()
 return
 end)
 other:WaitForChild("Name").TextColor = BrickColor.new(0,255,0)
