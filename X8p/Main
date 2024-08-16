@@ -1,7 +1,7 @@
 local success, err = pcall(function()
 if _G.alreadyexec == true then
   _G.NotificationText = "It's already executed"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/shuttle-r/crap/main/Notification.txt",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/48973854274252/Z/main/Notification.txt",true))()
   return
 end
 _G.alreadyexec = true
