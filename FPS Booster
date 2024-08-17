@@ -23,7 +23,7 @@ getgenv().Key = "Verify" --Put The Correct Key Here
 getgenv().KeyInput = "string" --Require For The Key To Work
 
 local Tab = Window:MakeTab({
-	Name = "ꤥ",
+	Name = "Current",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 }) --Making A Tab
