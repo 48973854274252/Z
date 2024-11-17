@@ -1,0 +1,11 @@
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local AntiFlyScript = character:FindFirstChild("Please stop")
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "INFO",
+	Text = "IF YOU DIED RE EXECUTE SCRIPT!", -- Required
+	Icon = "rbxassetid://118840539459491"
+
+})
+AntiFlyScript:Destroy()
